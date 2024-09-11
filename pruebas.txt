@@ -1,0 +1,50 @@
+<div class="gridpr">
+        <div class="card">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor erat tempor condimentum porttitor. Quisque faucibus ac ligula in dignissim. Integer pulvinar venenatis commodo</p>
+        </div>
+        <div class="card">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor erat tempor condimentum porttitor. Quisque faucibus ac ligula in dignissim. Integer pulvinar venenatis commodo</p>
+        </div>
+        <div class="card">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor erat tempor condimentum porttitor. Quisque faucibus ac ligula in dignissim. Integer pulvinar venenatis commodo</p>
+        </div>
+        <div class="card">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor erat tempor condimentum porttitor. Quisque faucibus ac ligula in dignissim. Integer pulvinar venenatis commodo</p>
+        </div>
+        <div class="card">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor erat tempor condimentum porttitor. Quisque faucibus ac ligula in dignissim. Integer pulvinar venenatis commodo</p>
+        </div>
+        <div class="card">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor erat tempor condimentum porttitor. Quisque faucibus ac ligula in dignissim. Integer pulvinar venenatis commodo</p>
+        </div>
+        <div class="card">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor erat tempor condimentum porttitor. Quisque faucibus ac ligula in dignissim. Integer pulvinar venenatis commodo</p>
+        </div>
+        <div class="card">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor erat tempor condimentum porttitor. Quisque faucibus ac ligula in dignissim. Integer pulvinar venenatis commodo</p>
+        </div>
+        <div class="card">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor erat tempor condimentum porttitor. Quisque faucibus ac ligula in dignissim. Integer pulvinar venenatis commodo</p>
+        </div>
+      </div>
+
+
+      .card {
+  background-color: #d5d39c;
+  border:#402e32 solid 6px;
+}
+
+.gridpr {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
