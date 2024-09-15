@@ -7,7 +7,6 @@
   --separation: 3rem;
 }
 
-
 * {
   font-family: "Poppins", "sans-serif";
   margin: 0;
@@ -50,7 +49,7 @@ li {
 
 p {
   color: var(--secondary-clr);
-  font-size:24px;
+  font-size: 24px;
   line-height: 30px;
 }
 
@@ -95,7 +94,7 @@ nav {
   z-index: 10;
 
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
 
   flex-direction: column;
@@ -103,9 +102,9 @@ nav {
   align-items: flex-start;
 }
 
-.sidebar li{
+.sidebar li {
   padding: 1.5rem;
-  width:100%;
+  width: 100%;
 }
 
 .sidebar li:first-child {
@@ -117,19 +116,19 @@ nav {
   transition: background-color ease-in-out 0.2s;
 }
 
-@media(max-width: 850px) {
+@media (max-width: 850px) {
   .hideOnMobile {
     display: none;
   }
 }
 
-@media(min-width: 850px) {
+@media (min-width: 850px) {
   .hideOnPc {
     display: none;
   }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .sidebar {
     width: 100%;
   }
@@ -138,64 +137,164 @@ nav {
 /* Calendari */
 
 .main-text {
-    color: var(--secondary-clr);
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-    margin-bottom: var(--separation);
+  color: var(--secondary-clr);
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  margin-bottom: var(--separation);
 }
 
 .main-text > h2 {
-    width: fit-content;
+  width: fit-content;
 }
 
 .main-text > h2::after {
-    content: '';
-    position: absolute;
-    background-color: var(--secondary-clr);
-    width: 100%;
-    height: 10px;
-    bottom: 0;
-    left: 0;
+  content: "";
+  position: absolute;
+  background-color: var(--secondary-clr);
+  width: 100%;
+  height: 10px;
+  bottom: 0;
+  left: 0;
 }
 
 .calendari {
-    display: grid;
-    grid-auto-rows: minmax(150px, 1fr); 
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    max-width: calc(7*260px); /* Maximo 7 items por fila */
-    border: var(--secondary-clr) solid 10px;
-    padding: 1rem;
-    gap: 12px;
-    background-color: #d5d39c;
+  display: grid;
+  grid-auto-rows: minmax(150px, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  max-width: calc(7 * 260px); /* Maximo 7 items por fila */
+  border: var(--secondary-clr) solid 10px;
+  padding: 1rem;
+  gap: 12px;
+  background-color: #d5d39c;
 }
 
 @media (max-width: 600px) {
-    .calendari {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    } 
+  .calendari {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
 }
 
 .day {
-    background-color: #fbead1;
-    display: grid;
-    grid-template-rows: 1fr 4fr;
+  background-color: var(--dominant-clr);
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.dayInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .dayNumber {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 10px 0px 0px;
+  background-color: var(--secondary-clr);
+  border: 2px solid var(--secondary-clr);
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px black;
+  color: var(--dominant-clr);
+  font: bold 15px/13px Poppins;
+  height: 16px;
+  min-width: 14px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  justify-self: flex-end;
+  margin: 10px 10px 0px 0px;
+}
+
+.dayLetter {
+  justify-self: flex-start;
+  padding: 10px 0px 0px 10px;
 }
 
 .dayTournaments {
-    padding: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 5px;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
 }
 
 .tournament {
-    background-color: aqua;
+  background-color: aqua;
+}
+
+.hiddenDaySeven {
+  background-color: var(--complementary-clr);
+}
+
+@media (max-width: 1798px) {
+  .hiddenDaySeven {
+    display: none;
+  }
+}
+
+@media (min-width: 1798px) {
+  .hiddenDaySeven {
+    display: flex;
+  }
+}
+
+/* Footer */
+
+footer {
+  color: #402e32;
+  background-color: var(--complementary-clr);
+  border-top: #402e32 solid 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+  text-align: center;
+  gap: 50px;
+}
+
+footer > div {
+  padding: 0px 10px 0px 10px;
+  border: #402e32 solid 2px;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+.truc-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: flex-start;
+}
+
+.footer-links > li {
+  font-size: 20px;
+}
+
+.footer-links > li:hover,
+.icon-xarxes > svg:hover {
+  transform: scale(1.25);
+  transition: transform ease-in-out 0.25s;
+}
+
+.contacte {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.icon-xarxes {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: 100px;
+  justify-content: space-around;
+  gap: -12px;
+  align-items: center;
 }
