@@ -186,6 +186,10 @@ nav {
   grid-template-columns: 1fr 1fr;
 }
 
+.pastDay {
+  background-color: darkgray;
+}
+
 .dayNumber {
   background-color: var(--secondary-clr);
   border: 2px solid var(--secondary-clr);
